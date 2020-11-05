@@ -13,11 +13,6 @@ class CodingBot {
     Execute(command = '') {
         console.log("position départ :");
         console.log(this.bot);
-        if(command.toUpperCase() === "MMMMMMMMMM") {
-            this.bot = {x: 0, y: 0, d: 'N'}
-            console.log("Déplacement :");
-            console.log(this.bot);
-        } else {
             const tabCommand =  command.toUpperCase().split('');
 
             tabCommand.map(command => {
@@ -63,7 +58,6 @@ class CodingBot {
                 console.log(this.bot);
             })
         }
-    }
 }
 
 const rl = readline.createInterface({
