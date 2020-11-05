@@ -46,13 +46,13 @@ class CodingBot {
                         break;
                     case 'M':
                         if (this.bot.d === "N") {
-                            this.bot.y === 0 ? this.bot.y += 0 : this.bot.y -= 1
+                            this.bot.y === 0 ? this.bot.y = this.grid.y : this.bot.y -= 1
                         } else if (this.bot.d === "W") {
-                            this.bot.x === 0 ? this.bot.x += 0 : this.bot.x -= 1
+                            this.bot.x === 0 ? this.bot.x = this.grid.x : this.bot.x -= 1
                         } else if (this.bot.d === "S") {
-                            this.bot.y === this.grid.y ? this.bot.y += 0 : this.bot.y += 1
+                            this.bot.y  === this.grid.y ? this.bot.y = 0 : this.bot.y += 1
                         } else if (this.bot.d === "E") {
-                            this.bot.x === this.grid.x ? this.bot.x += 0 : this.bot.x += 1
+                            this.bot.x  === this.grid.x  ? this.bot.x = 0 : this.bot.x += 1
                         }
                         break;
                     default:
